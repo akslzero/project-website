@@ -1,0 +1,255 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    grid-column: 1 / 3;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    background-color: #122d4f;
+    padding: 20px;
+    grid-column: 1/2;
+    
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+nav ul li {
+    margin-right: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #f4f4f4;
+}
+
+.judulkel5 {
+    color: white;
+    padding: 30%;
+    text-align: center;
+    font-size: 150%;
+    background-image: url('../img/sekolah.jpg'); 
+    background-color: #122d4f;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px; 
+    opacity: 90%;
+}
+
+
+button {
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border: none;
+  }
+  
+  .button1 {
+    background-color: transparent; 
+    color: white;
+    border: 2px solid white;
+
+  }
+  .button1:hover {
+    background-color: white;
+    color: #122d4f;
+  }
+
+.tentangkel5 {
+    background-color: white;
+    padding-top: 20%;
+    padding-bottom: 10%;
+}
+
+.isi-tentang h1 {
+    color: #122d4f;
+    text-align: center;
+}
+
+.isi-tentang p {
+    color: #122d4f;
+    text-align: center;
+}
+
+.bawahkel5 {
+    background-color: #122d4f;
+    padding: 10%;
+}
+
+
+.isi-bawah h2 {
+    color: #ffffff;
+    position: relative;
+    margin-top: 0;
+    left: -7%;
+    top: -80px;
+}
+
+.isi-bawah p {
+    color: #ffffff;
+    position: relative;
+    margin-top: 0;
+    left: -7%;
+    top: -70px;
+}
+
+.formkel5 {
+    padding: 15%;
+    background-color: #122d4f;
+
+}
+
+.isi-form h2 {
+    color: white;
+    text-align: center;
+    padding-bottom: 10%;
+    
+}
+
+
+
+.icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.containerbenefitkel5 {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
+    margin: auto;
+    padding-bottom: 20%;
+}
+
+.benefitcardkel5 {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    width: 220px;
+    padding: 40px 40px 40px 40px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.benefit-card:hover {
+    transform: translateY(-10px);
+}
+
+.icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.benefit-card h3 {
+    color: #122d4f;
+    margin: 10px 0;
+}
+
+.benefit-card p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.judulbenefitkel5 {
+    text-align: center;
+    color: #122d4f;
+    padding-bottom: 5%;
+    
+}
+
+.infokel5 {
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.col-md-4 img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;
+}
+
+.video-carousel {
+    position: relative;
+    width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.video-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.video-container video {
+    min-width: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.carousel-button.left {
+    left: 0;
+}
+
+.carousel-button.right {
+    right: 0;
+}

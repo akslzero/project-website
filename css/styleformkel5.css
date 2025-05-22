@@ -1,0 +1,230 @@
+form {
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    overflow: hidden; 
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Add this line */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    overflow-x: auto;
+    display: block;
+    font-family: 'Poppins', sans-serif; /* Add this line */
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Add this line */
+}
+
+td input[type="text"],
+td input[type="number"],
+td input[type="date"],
+td input[type="email"],
+td input[type="file"],
+td select,
+td textarea {
+    width: 100%; 
+    max-width: 100%; 
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    color: #333;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Add this line */
+}
+
+td input[type="text"]::placeholder,
+td input[type="number"]::placeholder,
+td input[type="date"]::placeholder,
+td input[type="email"]::placeholder {
+    color: #aaa;
+}
+
+form h2 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+
+input[type="button"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #5a67d8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="button"]:hover {
+    background-color: #434bd1;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.form-content {
+    display: flex;
+    gap: 20px; 
+    align-items: flex-start; 
+}
+
+.form-inputs {
+    flex: 1; 
+}
+
+.photo-circle {
+    width: 150px;
+    height: 150px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.photo-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.photo-kotak {
+    width: 150px;
+    height: 150px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 0%;
+}
+
+.photo-kotak img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .form-content {
+        flex-direction: column; 
+        align-items: center;
+    }
+}
+
+@media (max-width: 450px) {
+    .photo-kotak {
+        border-radius: 50%;
+    }
+}
+
+@media (max-width: 350px) {
+    .photo-circle {
+        border-radius: 0%;
+    }
+}
+
+@media (max-width: 768px) {
+    form {
+        padding: 15px;
+    }
+
+    td input[type="text"],
+    td input[type="number"],
+    td input[type="date"],
+    td input[type="email"],
+    td input[type="file"],
+    td select,
+    td textarea {
+        font-size: 14px;
+    }
+
+    input[type="button"] {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 450px) {
+    form h2 {
+        font-size: 20px;
+    }
+
+    td input[type="text"],
+    td input[type="number"],
+    td input[type="date"],
+    td input[type="email"],
+    td input[type="file"],
+    td select,
+    td textarea {
+        font-size: 12px;
+    }
+
+    input[type="button"] {
+        font-size: 14px;
+    }
+}
+
+.report {
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; 
+}
+
+.report p {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.search-bar {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 20px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.search-bar:focus {
+    border-color: #5a67d8;
+    box-shadow: 0 4px 12px rgba(90, 103, 216, 0.3);
+    outline: none;
+}
